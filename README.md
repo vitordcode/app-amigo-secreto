@@ -68,7 +68,7 @@ Temos uma sugestão de design no Figma. Entretanto, fique à vontade para montar
 
 ### Figma
 
-🔗 [Link do design](https://discord.com/channels/1089524234142888048/1271194778612273249/1318643189816627260)
+🔗 [Link do design](https://www.figma.com/community/file/1450914584401705838/mini-projeto-app-de-amigo-secreto)
 
 ## 👉🏽 Sobre esse mini-projeto
 
