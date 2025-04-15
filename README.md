@@ -1,107 +1,36 @@
-# App de Amigo Secreto
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Este mini-projeto é uma aplicação web para organizar um evento de amigo secreto. Os usuários podem se cadastrar, fazer login e participar de um sorteio para descobrir quem será seu amigo secreto. Vamos usar Next.js com Supabase para a autenticação e o banco de dados. Para enviar os emails vamos usar o Resend. Os estilos e componentes serão feitos com shadcn/ui e TailwindCSS.
+## Getting Started
 
-## 🤓 Antes de começar
-
-Certifique-se de ter o Node.js instalado em sua máquina. Use o `create-next-app` para criar o projeto com a versão mais atualizada do framework.
+First, run the development server:
 
 ```bash
-npx create-next-app@latest
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Siga o [tutorial do Supabase](https://supabase.com/docs/guides/auth/server-side/nextjs) para integrar o seu projeto Next.js com o Supabase.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🔨 Requisitos
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Login e cadastro
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- Implemente a tela de login e a funcionalidade de login/cadastro com magic link
-  - Recomendamos usar o [Supabase Auth](https://supabase.com/docs/guides/auth) para implementar a autenticação
-  - Utilize a [documentação do Supabase](https://supabase.com/docs/guides/auth/auth-email-passwordless) para auxiliar na implementação
+## Learn More
 
-### Header / Navbar
+To learn more about Next.js, take a look at the following resources:
 
-- Implemente o header com a logo, um link para a página `Meus grupos` e um botão para criar um novo grupo
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Cadastro de grupo
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- Implemente a tela de cadastro de grupo
-  - O grupo deve ter um nome e uma data de cadastro. A data pode ser inserida automaticamente pelo backend
-  - O grupo deverá ter participantes
-    - Cada participante deve ter um nome e um email
-    - O primeiro participante do grupo obrigatoriamente deve ser o usuário logado
-    - O usuário logado não pode ser removido do grupo
+## Deploy on Vercel
 
-### Sorteio do grupo e envio de emails
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- Ao criar o grupo, o sistema deve sortear os amigos secretos de cada participante
-- O sistema deve enviar um email para cada participante com o nome do seu amigo secreto
-
-  - Recomendamos que você utilize o [Resend](https://resend.com/) para enviar os emails
-
-  > 👀 **Dica:**
-  > Você precisa de um domínio para enviar os emails. Caso não tenha, você pode usar o domínio de testes do Resend. Procure sobre ele na documentação.
-
-### Tela do grupo
-
-- Implemente a tela do grupo
-  - A tela deve ter o nome do grupo e a lista de participantes
-  - A tela deve exibir o nome do amigo secreto da pessoa logada
-    - Deixe o nome do amigo escondido e só revele quando o usuário passar o mouse por cima
-
-### Tela de grupos
-
-- Implemente a tela de grupos
-  - A tela deve ter a lista de grupos do usuário logado
-  - Cada grupo deve ter o nome e a data de criação
-  - Ao clicar em um grupo, o usuário deve ser redirecionado para a tela do grupo
-
-## 🔨 Desafio extra para quem quer ir além
-
-- Implemente a opção de adicionar uma lista de presentes para cada participante
-- Implemente a opção de editar o grupo e fazer o sorteio novamente
-
-## 🎨 Design Sugerido
-
-Temos uma sugestão de design no Figma. Entretanto, fique à vontade para montar a aplicação conforme a sua criatividade.
-
-### Figma
-
-🔗 [Link do design](https://www.figma.com/community/file/1450914584401705838/mini-projeto-app-de-amigo-secreto)
-
-## 👉🏽 Sobre esse mini-projeto
-
-### O que você irá praticar:
-
-#### Next.js
-
-- Criação de rotas
-- Criação de componentes
-- Criação de server components e server actions
-- Gerenciamento de autenticação com Supabase
-- Gerenciamento de dados com Supabase
-
-#### shadcn/ui
-
-- Instalação e configuração
-- Utilização de componentes
-- Customização de temas
-
-#### Supabase
-
-- Autenticação com Supabase
-- Autenticação com magic link
-- Gerenciamento de dados com Supabase
-- Conexão com um app Next.js
-
-#### Resend
-
-- Criação de conta
-- Configuração e integração com Next.js
-- Envio de emails com Resend
-
-### Pré requisitos
-
-- Conhecimento básico de React e TailwindCSS.
-- Familiaridade com o uso de APIs e autenticação.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,0 +1,11 @@
+{
+  "/(auth)/auth/confirm/route": "/auth/confirm",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/(auth)/login/page": "/login",
+  "/page": "/",
+  "/app/grupos/novo/page": "/app/grupos/novo",
+  "/app/grupos/page": "/app/grupos",
+  "/app/grupos/[id]/page": "/app/grupos/[id]",
+  "/app/page": "/app"
+}
