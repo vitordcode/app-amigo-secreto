@@ -15,7 +15,7 @@ export async function login(previousState: LoginState, formData: FormData) {
 	const { error } = await supabase.auth.signInWithOtp({
 		email,
 		options: {
-			emailRedirectTo: "https://app-amigo-secreto.vercel.app/auth/confirm",
+			emailRedirectTo: `${process.env.NEXT_PUBLIC_URL}/auth/confirm`,
 		},
 	});
 
@@ -28,6 +28,6 @@ export async function login(previousState: LoginState, formData: FormData) {
 
 	return {
 		success: true,
-		message: "Email enviado",
+		message: "Email enviado!",
 	};
 }
